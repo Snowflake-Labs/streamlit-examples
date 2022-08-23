@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "streamlituserdashboard"
+version = "0.1.0"
+description = ""
+authors = ["Vladimir Timofeenko <vladimir.timofeenko@snowflake.com>"]
+
+[tool.poetry.dependencies]
+python = "==3.8.*"
+streamlit = "^1.11.0"
+snowflake-connector-python = "^2.7.9"
+pyarrow = "<6.1.0"
+plotly = "^5.9.0"
+toolz = "^0.12.0"
+snowflake-snowpark-python = "0.8.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+watchdog = "^2.1.9"
+rich = "^12.5.1"
+pip-licenses = "^3.5.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
